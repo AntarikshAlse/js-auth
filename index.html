@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Authentication</title>
+  </head>
+  <body>
+    <nav>
+      <h2 class="title">Auth</h2>
+      <div class="nav__action">
+        <a href="/">SignUp</a>
+        <a href="/profile.html">Profile</a>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1>Sign up</h1>
+        <form action="/profile" method="post">
+          <input
+            type="text"
+            id="name"
+            class=""
+            placeholder="Full Name"
+            required
+          /><br />
+          <input
+            type="email"
+            name=""
+            id="email"
+            class=""
+            placeholder="Email"
+            required
+          /><br />
+          <input
+            type="password"
+            name=""
+            id="pass"
+            class=""
+            required
+            placeholder="Password"
+          /><br />
+          <input
+            type="password"
+            name=""
+            id="cnfPass"
+            class=""
+            required
+            placeholder="Confirm Password"
+          /><br />
+          <div class="message">
+            <p class="error__msg" style="color: red">
+              Error: All Fileds are mandatory
+            </p>
+            <p class="success__msg" style="color: green">
+              Successfuly Signed Up
+            </p>
+          </div>
+          <button id="signup">SignUp</button>
+        </form>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
